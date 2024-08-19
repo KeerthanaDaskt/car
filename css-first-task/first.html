@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+    <style>
+    body,h1,p,ul{
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    body{
+       font-family: Arial, Helvetica, sans-serif;
+       line-height: 1.6;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+    }
+    header{
+        background-color:rgb(247, 243, 243);
+        padding: 10px 10px;
+        margin-bottom: 50px;
+    }
+    
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration:underline;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.left {
+    width: 49%;
+}
+
+.available-cars-section {
+    margin: 40px auto;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.section-tag {
+    display: inline-block;
+    background-color: #e6f4ff;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.section-header .highlight {
+    color: #007bff;
+}
+
+.section-header p {
+    color: #666;
+    width: 46%;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 95%;
+    overflow-x: scroll;
+}
+
+.car-item {
+    list-style: none;
+    height: 250px;
+}
+
+.car-item img {
+    border-radius: 15px;
+    height: 100%;
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <header>
+      <nav>
+        <h1 class="logo">
+            <a href="#">
+                <img src="logo.png" alt="logo">
+            </a>
+        </h1>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">AVAILABLE CARS</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <button><a href="#">cotact us</a></button>
+        </ul>
+      </nav>  
+    </header>
+    <div class="available-cars-section">
+        <div class="section-header">
+            <div class="left">
+                <div class="section-tag"><img src="Frame 18.png"alt="available img"></div>
+                <h1>Find the <div class="highlight">ideal car</div> to match your style, budget, group size, etc</h1>
+            </div>
+            <p>Whether you're planning a solo adventure or a family road trip, we have a vehicle that suits your needs. Explore our wide range of options to find your ideal match.</p>
+        </div>
+        <ul class="car-list">
+            <li class="car-item"> <img src="image1.png" alt="Blue Car"> </li>
+            <li class="car-item"> <img src="image2.png" alt="Orange Car"> </li>
+            <li class="car-item"> <img src="image3.png" alt="Black Car"> </li>
+            <li class="car-item"> <img src="image1.png" alt="Blue Car"> </li>
+            <li class="car-item"> <img src="image2.png" alt="Orange Car"> </li>
+            <li class="car-item"> <img src="image3.png" alt="Black Car"> </li>
+        </ul>
+    </div>
+</body>
+</html>
